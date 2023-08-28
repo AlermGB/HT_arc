@@ -1,8 +1,10 @@
 package ht3;
 
+import java.awt.*;
+
 public class TruckCar extends Car implements GasStation, WashStation {
 
-    public TruckCar(String carBrand, String carModel, String carColor, String carBodyType, int numberOfWheels, Fuel fuelType, String transmissionType, double volEngine) {
+    public TruckCar(String carBrand, String carModel, Color carColor, CarBodyType carBodyType, int numberOfWheels, Fuel fuelType, String transmissionType, double volEngine) {
         super(carBrand, carModel, carColor, carBodyType, numberOfWheels, fuelType, transmissionType, volEngine);
     }
 

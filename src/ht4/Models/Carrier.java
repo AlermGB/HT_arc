@@ -17,7 +17,7 @@ public class Carrier {
         return id;
     }
 
-    public long getCardNumber(){
+    public long getCardNumber() {
         return this.cardNumber;
     }
 }

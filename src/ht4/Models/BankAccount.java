@@ -10,7 +10,6 @@ public class BankAccount {
     private long oldCard;
 
 
-
     public BankAccount() {
         this.card = oldCard + 1;
         oldCard = this.card;
@@ -34,7 +33,7 @@ public class BankAccount {
         return balance;
     }
 
-    public void setBalance(int balance){
-        this.balance =balance;
+    public void setBalance(int balance) {
+        this.balance = balance;
     }
 }

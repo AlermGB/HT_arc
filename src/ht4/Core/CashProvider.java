@@ -18,7 +18,6 @@ public class CashProvider {
     private CarrierRepository carrierRepository;
 
 
-
     /**
      * Конструктор класса
      */
@@ -50,18 +49,21 @@ public class CashProvider {
         cardNumber = client.getCardNumber();
         isAuthorized = true;
     }
-    /**
 
-     Метод покупки билета*
-     @param ticket билет
-     @return результат выполнения операции
-     @throws RuntimeException
+    /**
+     * Метод покупки билета*
+     *
+     * @param ticket билет
+     * @return результат выполнения операции
+     * @throws RuntimeException
      */
     public boolean buy(Ticket ticket) throws RuntimeException {
         if (isAuthorized) {
             Carrier carrier = carrierRepository.read(1);
-            return cashRepository.transaction(ticket.getPrice(), cardNumber, carrier.getCardNumber());}
-        return false;}
+            return cashRepository.transaction(ticket.getPrice(), cardNumber, carrier.getCardNumber());
+        }
+        return false;
+    }
 
 
 }

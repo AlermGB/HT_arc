@@ -5,12 +5,12 @@ import java.util.Date;
 /**
  * Модель билета
  */
-public class Ticket{
+public class Ticket {
 
     private int routeNumber;
-    private  int place;
-    private  int price;
-    private  Date date;
+    private int place;
+    private int price;
+    private Date date;
     private boolean isValid;
 
 

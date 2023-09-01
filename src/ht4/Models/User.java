@@ -19,16 +19,17 @@ public class User {
         this.cardNumber = cardNumber;
     }
 
-    public int getId(){
+    public int getId() {
         return this.id;
     }
+
     public String getUserName() {
         return this.userName;
     }
-    public long getCardNumber(){
+
+    public long getCardNumber() {
         return this.cardNumber;
     }
-
 
 
     @Override
@@ -58,6 +59,6 @@ public class User {
     }
 
     public int getHashPassword() {
-        return  hashPassword;
+        return hashPassword;
     }
 }
